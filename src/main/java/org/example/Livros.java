@@ -1,6 +1,6 @@
 package org.example;
 
-public class Livros {
+public abstract class Livros {
     private String nome;
     private String descricao;
     private double valor;
@@ -64,10 +64,6 @@ public class Livros {
 
 
  public boolean aplicaDescontoDe(double porcentagem) {
-     if (porcentagem > 0.3) {
          return false;
-     }
-         this.valor -= this.valor * porcentagem;
-         return true;
      }
  }
